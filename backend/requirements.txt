@@ -1,8 +1,8 @@
-fastapi==0.111.0
-uvicorn==0.30.1
-pydantic==2.7.4
-langchain==0.2.6
-langchain-groq==0.1.5
-python-dotenv==1.0.1
-langgraph==0.0.69
-langchain-huggingface==0.0.3
+fastapi
+uvicorn
+pydantic
+langchain
+langchain-groq
+python-dotenv
+langgraph
+langchain-huggingface
