@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from groq import Groq
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.vectorstores import InMemoryVectorStore
 from langchain_core.documents import Document
 from backend.model import TicketState
