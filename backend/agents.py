@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from groq import Groq
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_core.vectorstores import InMemoryVectorStore
 from langchain_core.documents import Document
 from backend.model import TicketState
@@ -32,7 +32,7 @@ except Exception as e:
 llm = ChatGroq(temperature=0.2, model_name=working_model)
 
 # --- 2. KNOWLEDGE BASE (InMemory RAG) ---
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key="unga_gemini_key")
 sample_policies = [
     Document(page_content="Hardware Policy: If a laptop screen is broken under warranty, we will replace it for free within 3-5 business days."),
     Document(page_content="Software Policy: For software login issues, clearing the browser cache or resetting the password solves 90% of cases."),

@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from backend.model import TicketRequest, TicketResponse
 
-# IMPORT CHANGED: Ippo graph.py-la irunthu import panrom
+
 from backend.graph import process_ticket 
 
 app = FastAPI(title="AI Ticketing Resolver API")
