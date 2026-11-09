@@ -5,4 +5,4 @@ langchain
 langchain-groq
 python-dotenv
 langgraph
-langchain_google_genai
+langchain-huggingface
